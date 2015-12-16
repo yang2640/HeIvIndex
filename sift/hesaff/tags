@@ -1,0 +1,140 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AffineHessianDetector	hesaff.cpp	/^   AffineHessianDetector(const Mat &image, const PyramidParams &par, const AffineShapeParams &ap, const SIFTDescriptorParams &sp) : $/;"	f	struct:AffineHessianDetector
+AffineHessianDetector	hesaff.cpp	/^struct AffineHessianDetector : public HessianDetector, AffineShape, HessianKeypointCallback, AffineShapeCallback$/;"	s	file:
+AffineShape	affine.h	/^   AffineShape(const AffineShapeParams &par) : $/;"	f	struct:AffineShape
+AffineShape	affine.h	/^struct AffineShape$/;"	s
+AffineShapeCallback	affine.h	/^struct AffineShapeCallback$/;"	s
+AffineShapeParams	affine.h	/^   AffineShapeParams()$/;"	f	struct:AffineShapeParams
+AffineShapeParams	affine.h	/^struct AffineShapeParams$/;"	s
+HESSIAN_BRIGHT	pyramid.h	/^      HESSIAN_BRIGHT = 1,$/;"	e	enum:HessianDetector::__anon1
+HESSIAN_DARK	pyramid.h	/^      HESSIAN_DARK   = 0,$/;"	e	enum:HessianDetector::__anon1
+HESSIAN_SADDLE	pyramid.h	/^      HESSIAN_SADDLE = 2,$/;"	e	enum:HessianDetector::__anon1
+HessianAffineParams	hesaff.cpp	/^   HessianAffineParams()$/;"	f	struct:HessianAffineParams
+HessianAffineParams	hesaff.cpp	/^struct HessianAffineParams$/;"	s	file:
+HessianDetector	pyramid.h	/^   HessianDetector(const PyramidParams &par) :$/;"	f	struct:HessianDetector
+HessianDetector	pyramid.h	/^struct HessianDetector$/;"	s
+HessianKeypointCallback	pyramid.h	/^class HessianKeypointCallback$/;"	c
+Keypoint	hesaff.cpp	/^struct Keypoint$/;"	s	file:
+MAX_SUBPIXEL_SHIFT	pyramid.cpp	117;"	d	file:
+POINT_SAFETY_BORDER	pyramid.cpp	120;"	d	file:
+PyramidParams	pyramid.h	/^   PyramidParams()$/;"	f	struct:PyramidParams
+PyramidParams	pyramid.h	/^struct PyramidParams$/;"	s
+SIFTDescriptor	siftdesc.h	/^   SIFTDescriptor(const SIFTDescriptorParams &par) :$/;"	f	struct:SIFTDescriptor
+SIFTDescriptor	siftdesc.h	/^struct SIFTDescriptor$/;"	s
+SIFTDescriptorParams	siftdesc.h	/^   SIFTDescriptorParams()$/;"	f	struct:SIFTDescriptorParams
+SIFTDescriptorParams	siftdesc.h	/^struct SIFTDescriptorParams$/;"	s
+__AFFINE_H__	affine.h	11;"	d
+__HELPERS_H__	helpers.h	11;"	d
+__PYRAMID_H__	pyramid.h	11;"	d
+__SIFTDESC_H__	siftdesc.h	13;"	d
+a11	hesaff.cpp	/^   float a11,a12,a21,a22;$/;"	m	struct:Keypoint	file:
+a12	hesaff.cpp	/^   float a11,a12,a21,a22;$/;"	m	struct:Keypoint	file:
+a21	hesaff.cpp	/^   float a11,a12,a21,a22;$/;"	m	struct:Keypoint	file:
+a22	hesaff.cpp	/^   float a11,a12,a21,a22;$/;"	m	struct:Keypoint	file:
+affineShapeCallback	affine.h	/^   AffineShapeCallback *affineShapeCallback;$/;"	m	struct:AffineShape
+bin0	siftdesc.h	/^   int *bin0, *bin1;$/;"	m	struct:SIFTDescriptor
+bin1	siftdesc.h	/^   int *bin0, *bin1;$/;"	m	struct:SIFTDescriptor
+blur	pyramid.h	/^   Mat prevBlur, blur;$/;"	m	struct:HessianDetector
+border	pyramid.h	/^   int  border;$/;"	m	struct:PyramidParams
+computeCircularGaussMask	helpers.cpp	/^void computeCircularGaussMask(Mat &mask)$/;"	f
+computeGaussMask	helpers.cpp	/^void computeGaussMask(Mat &mask)$/;"	f
+computeGradient	affine.cpp	/^void computeGradient(const Mat &img, Mat &gradx, Mat &grady)$/;"	f
+computeSiftDescriptor	siftdesc.cpp	/^void SIFTDescriptor::computeSiftDescriptor(Mat &patch)$/;"	f	class:SIFTDescriptor
+convergenceThreshold	affine.h	/^   float convergenceThreshold;$/;"	m	struct:AffineShapeParams
+cur	pyramid.h	/^   Mat low, cur, high;$/;"	m	struct:HessianDetector
+desc	hesaff.cpp	/^   unsigned char desc[128];$/;"	m	struct:Keypoint	file:
+desc_factor	hesaff.cpp	/^   float desc_factor;$/;"	m	struct:HessianAffineParams	file:
+detectOctaveKeypoints	pyramid.cpp	/^void HessianDetector::detectOctaveKeypoints(const Mat &firstLevel, float pixelDistance, Mat &nextOctaveFirstLevel)$/;"	f	class:HessianDetector
+detectPyramidKeypoints	pyramid.cpp	/^void HessianDetector::detectPyramidKeypoints(const Mat &image)$/;"	f	class:HessianDetector
+doubleImage	helpers.cpp	/^Mat doubleImage(const Mat &input)$/;"	f
+edgeEigenValueRatio	pyramid.h	/^   float edgeEigenValueRatio;$/;"	m	struct:PyramidParams
+edgeScoreThreshold	pyramid.h	/^   const float edgeScoreThreshold;$/;"	m	struct:HessianDetector
+exportKeypoints	hesaff.cpp	/^   void exportKeypoints(ostream &out)$/;"	f	struct:AffineHessianDetector
+finalThreshold	pyramid.h	/^   const float finalThreshold;$/;"	m	struct:HessianDetector
+findAffineShape	affine.cpp	/^bool AffineShape::findAffineShape(const Mat &blur, float x, float y, float s, float pixelDistance, int type, float response)$/;"	f	class:AffineShape
+findLevelKeypoints	pyramid.cpp	/^void HessianDetector::findLevelKeypoints(float curScale, float pixelDistance)$/;"	f	class:HessianDetector
+fx	affine.h	/^   cv::Mat mask, img, fx, fy;$/;"	m	struct:AffineShape
+fy	affine.h	/^   cv::Mat mask, img, fx, fy;$/;"	m	struct:AffineShape
+g_numberOfAffinePoints	hesaff.cpp	/^int g_numberOfAffinePoints = 0;$/;"	v
+g_numberOfPoints	hesaff.cpp	/^int g_numberOfPoints = 0;$/;"	v
+gaussianBlur	helpers.cpp	/^Mat gaussianBlur(const Mat input, float sigma)$/;"	f
+gaussianBlurInplace	helpers.cpp	/^void gaussianBlurInplace(Mat &inplace, float sigma)$/;"	f
+getEigenvalues	helpers.cpp	/^bool getEigenvalues(float a, float b, float c, float d, float &l1, float &l2)$/;"	f
+getHessianPointType	pyramid.cpp	/^int getHessianPointType(float *ptr, float value)$/;"	f
+getTime	helpers.cpp	/^double getTime()$/;"	f
+grad	siftdesc.h	/^   cv::Mat mask, grad, ori;$/;"	m	struct:SIFTDescriptor
+halfImage	helpers.cpp	/^Mat halfImage(const Mat &input)$/;"	f
+hessianKeypointCallback	pyramid.h	/^   HessianKeypointCallback *hessianKeypointCallback;$/;"	m	struct:HessianDetector
+hessianResponse	pyramid.cpp	/^Mat HessianDetector::hessianResponse(const Mat &inputImage, float norm)$/;"	f	class:HessianDetector
+high	pyramid.h	/^   Mat low, cur, high;$/;"	m	struct:HessianDetector
+image	hesaff.cpp	/^   const Mat image;$/;"	m	struct:AffineHessianDetector	file:
+img	affine.h	/^   cv::Mat mask, img, fx, fy;$/;"	m	struct:AffineShape
+initialSigma	affine.h	/^   float initialSigma;$/;"	m	struct:AffineShapeParams
+initialSigma	pyramid.h	/^   float initialSigma;$/;"	m	struct:PyramidParams
+interpolate	helpers.cpp	/^bool interpolate(const Mat &im, float ofsx, float ofsy, float a11, float a12, float a21, float a22, Mat &res)$/;"	f
+interpolateCheckBorders	helpers.cpp	/^bool interpolateCheckBorders(const Mat &im, float ofsx, float ofsy, float a11, float a12, float a21, float a22, const Mat &res)$/;"	f
+invSqrt	helpers.cpp	/^void invSqrt(float &a, float &b, float &c, float &l1, float &l2)$/;"	f
+isMax	pyramid.cpp	/^bool isMax(float val, const Mat &pix, int row, int col)$/;"	f
+isMin	pyramid.cpp	/^bool isMin(float val, const Mat &pix, int row, int col)$/;"	f
+keys	hesaff.cpp	/^   vector<Keypoint> keys;$/;"	m	struct:AffineHessianDetector	file:
+localizeKeypoint	pyramid.cpp	/^void HessianDetector::localizeKeypoint(int r, int c, float curScale, float pixelDistance)$/;"	f	class:HessianDetector
+low	pyramid.h	/^   Mat low, cur, high;$/;"	m	struct:HessianDetector
+main	hesaff.cpp	/^int main(int argc, char **argv)$/;"	f
+mask	affine.h	/^   cv::Mat mask, img, fx, fy;$/;"	m	struct:AffineShape
+mask	siftdesc.h	/^   cv::Mat mask, grad, ori;$/;"	m	struct:SIFTDescriptor
+maxBinValue	siftdesc.h	/^   float maxBinValue;$/;"	m	struct:SIFTDescriptorParams
+maxIterations	affine.h	/^   int maxIterations;$/;"	m	struct:AffineShapeParams
+max_iter	hesaff.cpp	/^   int   max_iter;$/;"	m	struct:HessianAffineParams	file:
+mrSize	affine.h	/^   float mrSize;$/;"	m	struct:AffineShapeParams
+negativeThreshold	pyramid.h	/^   const float negativeThreshold;$/;"	m	struct:HessianDetector
+normalize	siftdesc.cpp	/^float SIFTDescriptor::normalize()$/;"	f	class:SIFTDescriptor
+normalizeAffine	affine.cpp	/^bool AffineShape::normalizeAffine(const Mat &img, float x, float y, float s, float a11, float a12, float a21, float a22)$/;"	f	class:AffineShape
+numberOfScales	pyramid.h	/^   int  numberOfScales;$/;"	m	struct:PyramidParams
+octaveMap	pyramid.h	/^   Mat octaveMap;$/;"	m	struct:HessianDetector
+onAffineShapeFound	hesaff.cpp	/^   void onAffineShapeFound($/;"	f	struct:AffineHessianDetector
+onHessianKeypointDetected	hesaff.cpp	/^   void onHessianKeypointDetected(const Mat &blur, float x, float y, float s, float pixelDistance, int type, float response)$/;"	f	struct:AffineHessianDetector
+ori	siftdesc.h	/^   cv::Mat mask, grad, ori;$/;"	m	struct:SIFTDescriptor
+orientationBins	siftdesc.h	/^   int orientationBins;$/;"	m	struct:SIFTDescriptorParams
+par	affine.h	/^   AffineShapeParams par;$/;"	m	struct:AffineShape
+par	pyramid.h	/^   PyramidParams par;$/;"	m	struct:HessianDetector
+par	siftdesc.h	/^   SIFTDescriptorParams par;$/;"	m	struct:SIFTDescriptor
+patch	affine.h	/^   cv::Mat patch;$/;"	m	struct:AffineShape
+patchSize	affine.h	/^   int patchSize;$/;"	m	struct:AffineShapeParams
+patchSize	siftdesc.h	/^   int patchSize;$/;"	m	struct:SIFTDescriptorParams
+patch_size	hesaff.cpp	/^   int   patch_size;$/;"	m	struct:HessianAffineParams	file:
+photometricallyNormalize	helpers.cpp	/^void photometricallyNormalize(Mat &image, const Mat &binaryMask, float &sum, float &var)$/;"	f
+positiveThreshold	pyramid.h	/^   const float positiveThreshold;$/;"	m	struct:HessianDetector
+precomp_bins	siftdesc.h	/^   std::vector<int> precomp_bins;$/;"	m	struct:SIFTDescriptor
+precomp_weights	siftdesc.h	/^   std::vector<float> precomp_weights;$/;"	m	struct:SIFTDescriptor
+precomputeBinsAndWeights	siftdesc.cpp	/^void SIFTDescriptor::precomputeBinsAndWeights()$/;"	f	class:SIFTDescriptor
+prevBlur	pyramid.h	/^   Mat prevBlur, blur;$/;"	m	struct:HessianDetector
+rectifyAffineTransformationUpIsUp	helpers.cpp	/^void rectifyAffineTransformationUpIsUp(float &a11, float &a12, float &a21, float &a22)$/;"	f
+rectifyAffineTransformationUpIsUp	helpers.cpp	/^void rectifyAffineTransformationUpIsUp(float *U)$/;"	f
+response	hesaff.cpp	/^   float response;$/;"	m	struct:Keypoint	file:
+s	hesaff.cpp	/^   float x, y, s;$/;"	m	struct:Keypoint	file:
+sample	siftdesc.cpp	/^void SIFTDescriptor::sample()$/;"	f	class:SIFTDescriptor
+samplePatch	siftdesc.cpp	/^void SIFTDescriptor::samplePatch()$/;"	f	class:SIFTDescriptor
+setAffineShapeCallback	affine.h	/^   void setAffineShapeCallback(AffineShapeCallback *callback)$/;"	f	struct:AffineShape
+setHessianKeypointCallback	pyramid.h	/^   void setHessianKeypointCallback(HessianKeypointCallback *callback)$/;"	f	struct:HessianDetector
+sift	hesaff.cpp	/^   SIFTDescriptor sift;$/;"	m	struct:AffineHessianDetector	file:
+smmWindowSize	affine.h	/^   int smmWindowSize;$/;"	m	struct:AffineShapeParams
+solveLinear3x3	helpers.cpp	/^void solveLinear3x3(float *A, float *b)$/;"	f
+spatialBins	siftdesc.h	/^   int spatialBins;$/;"	m	struct:SIFTDescriptorParams
+swap	helpers.cpp	/^void swap(ValueType *a, ValueType *b)$/;"	f
+threshold	hesaff.cpp	/^   float threshold;$/;"	m	struct:HessianAffineParams	file:
+threshold	pyramid.h	/^   float threshold;$/;"	m	struct:PyramidParams
+type	hesaff.cpp	/^   int type;$/;"	m	struct:Keypoint	file:
+upscaleInputImage	pyramid.h	/^   int upscaleInputImage;$/;"	m	struct:PyramidParams
+vec	siftdesc.h	/^   std::vector<float> vec;$/;"	m	struct:SIFTDescriptor
+verbose	hesaff.cpp	/^   bool  verbose;$/;"	m	struct:HessianAffineParams	file:
+w0	siftdesc.h	/^   float *w0, *w1;$/;"	m	struct:SIFTDescriptor
+w1	siftdesc.h	/^   float *w0, *w1;$/;"	m	struct:SIFTDescriptor
+workspace	affine.h	/^   std::vector<unsigned char> workspace;$/;"	m	struct:AffineShape
+x	hesaff.cpp	/^   float x, y, s;$/;"	m	struct:Keypoint	file:
+y	hesaff.cpp	/^   float x, y, s;$/;"	m	struct:Keypoint	file:
+~AffineShape	affine.h	/^   ~AffineShape()$/;"	f	struct:AffineShape

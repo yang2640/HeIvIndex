@@ -1,0 +1,32 @@
+Author: Yang Zhou 
+
+Contact: zhouyang2640@gmail.com
+
+Build: Go to the hamming dir, type make, the executables will be placed to the HeIvIndex dir.
+
+
+plug in the data, follow the pipeline:
+
+(1) put all ukbench images under data/Images
+
+(2) put all extracted feature files under data/Images, the format of the feature file follow CSV (space separated)
+
+(3) sh sample.sh, construct the training data for kmeans
+
+(4) python genProjectMatrix.py, construct the projection matrix for hamming embedding 
+
+(5) ./kmeans, build the codebook
+
+(6) ./he_medians, construct the median mat for hamming embedding
+
+(7) ./he_quantize, do a batch quantization for all images, feature paths are listed in data/featlist
+
+(8) ./he_query > query.txt, do a batch query for all images, feature paths are listed in data/featlist
+
+(9) python computeNSScore.py, to compute the NS score 
+
+Note:
+
+(1) A lot of files are pre-loaded, I have not checked the read error, e.g., the file doesnot exist
+
+(2) All the generated files are put in the data dir
