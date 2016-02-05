@@ -147,7 +147,7 @@ int main() {
     string codebookPath = "data/cluster/codebook.yml";
     string flannPath = "data/cache/flann.index";
     /* define the codebook size */
-    int nWords = 200000;
+    int nWords = 50000;
     int nIter = 18;
     bool verbose = true;
 

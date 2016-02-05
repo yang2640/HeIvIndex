@@ -67,17 +67,12 @@ int main() {
 
     /* query */
     vector<string> siftpaths = readlines("data/featlist");
-    // only take 2347 - 3347 for debug
-    vector<string> tmp;
-    for (int i = 0; i < 10200; ++i) {
-        tmp.push_back(siftpaths[i]);
-    }
     string savepath = "data/cache/ivindex.txt";
     int threshold = 26;
     if (exists(savepath)) {
-        IvIndex ivindex(savepath, codebook, tmp.size(), projMat, medians);
-        for (size_t i = 0; i < tmp.size(); ++i) {
-            vector<size_t> ret = ivindex.score(tmp[i], 15, flannIndex, threshold);
+        IvIndex ivindex(savepath, codebook, siftpaths.size(), projMat, medians);
+        for (size_t i = 0; i < siftpaths.size(); ++i) {
+            vector<size_t> ret = ivindex.score(siftpaths[i], 15, flannIndex, threshold);
             for (auto x: ret) {
                 cout << x << " ";
             }

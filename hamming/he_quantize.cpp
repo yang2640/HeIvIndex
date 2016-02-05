@@ -90,15 +90,10 @@ int main() {
 
     /* quantize */
     vector<string> siftpaths = readlines("data/featlist");
-    // only take the 2347 - 3347 for debug
-    vector<string> tmp;
-    for (int i = 0; i < 10200; ++i) {
-        tmp.push_back(siftpaths[i]);
-    }
     string savepath = "data/cache/ivindex.txt";
 
-    IvIndex ivindex(codebook, tmp.size(), projMat, medians);
-    ivindex.quantize(tmp, savepath, flannIndex);
+    IvIndex ivindex(codebook, siftpaths.size(), projMat, medians);
+    ivindex.quantize(siftpaths, savepath, flannIndex);
 
     if (indexParams != nullptr) {
         delete indexParams;
